@@ -37,7 +37,13 @@
             // $('#result').load('test.html', function(...args){
             //     console.log(args)
             // });
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/posts',
+                method: "GET",
+                dataType: "json"
+            }).done( data => console.log(data))
         })
+        
     </script>
 </body>
 </html>
